@@ -102,3 +102,33 @@
 
 })(jQuery);
 
+// JavaScript to highlight active link
+document.addEventListener("DOMContentLoaded", function () {
+    let navLinks = document.querySelectorAll(".nav-link");
+
+    // Check localStorage for saved active link
+    let activePage = localStorage.getItem("activeLink");
+
+    if (activePage) {
+        navLinks.forEach(link => {
+            if (link.href.includes(activePage)) {
+                link.classList.add("active");
+            }
+        });
+    }
+
+    // Add click event listener to each link
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            // Remove "active" class from all links
+            navLinks.forEach(l => l.classList.remove("active"));
+
+            // Add "active" class to clicked link
+            this.classList.add("active");
+
+            // Save active link to localStorage
+            localStorage.setItem("activeLink", this.getAttribute("href"));
+        });
+    });
+});
+

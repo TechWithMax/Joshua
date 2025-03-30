@@ -753,6 +753,179 @@
 /*** Testimonial End ***/
 
 
+/**************************************/
+/************ Portfolio CSS ***********/
+/**************************************/
+.portfolio {
+    position: relative;
+    padding: 90px 0 60px 0;
+    background: #f2f2f2;
+}
+
+.portfolio .portfolio-item {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-img {
+    position: relative;
+    background: white;
+    overflow: hidden;
+    
+}
+
+.portfolio .portfolio-item .link-preview,
+.portfolio .portfolio-item .link-details {
+    position: absolute;
+    display: inline-block;
+    padding: 5px 0;
+    line-height: 1;
+    text-align: center;
+    width: 45px;
+    height: 35px;
+    background: #4F84C4;
+    border: 1px solid #ffffff;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.portfolio .portfolio-item .link-preview i,
+.portfolio .portfolio-item .link-details i {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.portfolio .portfolio-item .link-preview:hover,
+.portfolio .portfolio-item .link-details:hover {
+    background: #ffffff;
+    border: 1px solid #4F84C4;
+}
+
+.portfolio .portfolio-item .link-preview:hover i,
+.portfolio .portfolio-item .link-details:hover i {
+    color: #353535;
+}
+
+.portfolio .portfolio-item .link-preview {
+    left: 0;
+    top: calc(50% - 18px);
+}
+
+.portfolio .portfolio-item .link-details {
+    right: 0;
+    top: calc(50% - 18px);
+}
+
+.portfolio .portfolio-item:hover .link-preview {
+    opacity: 1;
+    left: calc(50% - 50px);
+}
+
+.portfolio .portfolio-item:hover .link-details {
+    opacity: 1;
+    right: calc(50% - 50px);
+}
+
+.portfolio .portfolio-item .portfolio-info {
+    position: relative;
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.portfolio .portfolio-item .portfolio-info h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+/**************************************/
+/******** Section Header CSS **********/
+/**************************************/
+.section-header {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    padding-bottom: 25px;
+}
+
+.section-header h2 {
+    
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.section-header::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background: #cccccc;
+    border-radius: 0 0 5px 5px;
+    bottom: 0;
+    left: calc(50% - 50px);
+}
+
+.section-header p {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+}
+
+/** Agriculture Page Video Card Starts**/
+.video-card {
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: var(--bs-dark);
+    width: fit-content;
+}
+.video-card video {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.video-text {
+    width: 100%;
+    font-size: 18px;
+    text-align:center;
+}
+.video-text h1{
+    font-size: 60px;
+    text-align:center;
+}
+
+/** Responsive video card **/
+@media (max-width: 768px) {
+            .video-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .video-text h1{
+                font-size: 30px;
+            }
+            .video-text {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+        }
+/** Agriculture Page Video Card Finish **/
+
 /*** Contact Start ***/
 .contact .contact-img {
     position: relative;
