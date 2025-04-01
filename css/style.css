@@ -884,6 +884,68 @@
     text-align: center;
     margin: 0;
 }
+/**************************************/
+/********* About + Single CSS *********/
+/**************************************/
+.about,
+.single {
+    position: relative;
+    padding: 90px 0 60px 0;
+    background: #f2f2f2;
+}
+
+.about .col-md-12,
+.about .col-md-6,
+.single .col-md-12,
+.single .col-md-6 {
+    margin-bottom: 30px;
+}
+
+.about .about-img,
+.single .single-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.about .about-img img,
+.single .single-img img {
+    width: 100%;
+}
+
+.about .about-content,
+.single .single-content {
+    position: relative;
+    width: 80%;
+    margin: -100px auto 0 auto;
+    padding: 30px;
+    background: #ffffff;
+}
+
+.about .about-content h2,
+.single .single-content h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about .about-content p,
+.single .single-content p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.about .btn,
+.single .btn {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: #999999;
+    border-radius: 0;
+}
+
+.about .btn:hover,
+.single .btn:hover {
+    background: #4F84C4;
+}
 
 /** Agriculture Page Video Card Starts**/
 .video-card {
