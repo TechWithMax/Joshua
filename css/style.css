@@ -367,7 +367,7 @@
 .bg-breadcrumb-agric {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(222, 92, 92, 0.9), rgba(0, 0, 0, 0.2)), url(../img/agric-banner-2.webp);
+    background: linear-gradient(rgba(60, 77, 66, 0.9), rgba(0, 0, 0, 0.2)), url(../img/agric-banner-2.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
