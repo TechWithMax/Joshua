@@ -363,6 +363,28 @@
 /*** Single Page Hero Header End ***/
 
 
+/*** Agriculture Page Hero Header Start ***/
+.bg-breadcrumb-agric {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(222, 92, 92, 0.9), rgba(0, 0, 0, 0.2)), url(../img/agric-banner-2.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    transition: 0.5s;
+}
+
+.bg-breadcrumb-agric .breadcrumb {
+    position: relative;
+}
+
+.bg-breadcrumb-agric .breadcrumb .breadcrumb-item a {
+    color: var(--bs-white);
+}
+/*** Agriculture Page Hero Header End ***/
+
+
 /*** Feature Start ***/
 .feature .feature-item {
     border-radius: 10px;
