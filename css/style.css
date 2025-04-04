@@ -459,6 +459,13 @@
 /*** Feature End ***/
 
 
+/**************************************/
+/************ Index page - Our Gallary CSS ***********/
+/**************************************/
+
+
+
+
 /*** Service Start ***/
 .service .service-item {
     border-radius: 10px;
@@ -776,9 +783,9 @@
 
 
 /**************************************/
-/************ Portfolio CSS ***********/
+/************ Agriculture Gallary CSS ***********/
 /**************************************/
-.portfolio {
+.portfolio{
     position: relative;
     padding: 90px 0 60px 0;
     background: #f2f2f2;

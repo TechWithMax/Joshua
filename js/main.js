@@ -130,5 +130,19 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("activeLink", this.getAttribute("href"));
         });
     });
+
+    
+    // Portfolio isotope and filter
+    var portfolioIsotope = $('.our-gallary-container').isotope({
+        itemSelector: '.our-gallary-item',
+        layoutMode: 'fitRows'
+    });
+    $('#our-gallary-flters li').on('click', function () {
+        $("#our-gallary li").removeClass('active');
+        $(this).addClass('active');
+
+        portfolioIsotope.isotope({filter: $(this).data('filter')});
+    });
+     
 });
 
